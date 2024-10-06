@@ -15,7 +15,7 @@ This project is a simplified version of a MIPS processor, designed and implement
 
 The processor uses three instruction formats:
 
-### 1Register Instructions
+### 1.Register Instructions
 
 | Field   | opcode | rs    | rt    | rd    | funct |
 |---------|--------|-------|-------|-------|-------|
