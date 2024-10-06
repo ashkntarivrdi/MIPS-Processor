@@ -15,7 +15,7 @@ This project is a simplified version of a MIPS processor, designed and implement
 
 The processor uses three instruction formats:
 
-### Register Instructions
+### 1Register Instructions
 
 | Field   | opcode | rs    | rt    | rd    | funct |
 |---------|--------|-------|-------|-------|-------|
@@ -24,6 +24,28 @@ The processor uses three instruction formats:
 
 
 #### Operation Mnemonics:
+
+| Mnemonic | Operation          | funct |
+|----------|--------------------|-------|
+| ADD      | rd ← rs + rt        | 000   |
+| SUB      | rd ← rs - rt        | 001   |
+| AND      | rd ← rs & rt        | 010   |
+| OR       | rd ← rs | rt        | 011   |
+| MULT     | rd ← rs * rt        | 100   |
+| XOR      | rd ← rs ^ rt        | 101   |
+| JR       | PC ← rs             | 111   |
+
+---
+### 2.Immediate Instructions
+
+
+| Field   | opcode | rs    | rt    | immediate |
+|---------|--------|-------|-------|------------|
+| Length  | 4 bits | 3 bits| 3 bits| 6 bits     |
+
+
+#### Operation Mnemonics:
+
 | Mnemonic | Operation                                 | opcode |
 |----------|-------------------------------------------|--------|
 | ADDi     | rt ← rs + SIGN_EXTEND(immediate)          | 0010   |
@@ -37,35 +59,7 @@ The processor uses three instruction formats:
 
 ---
 
-### Jump Instructions
-
-
-| Field   | opcode | rs    | rt    | immediate |
-|---------|--------|-------|-------|------------|
-| Length  | 4 bits | 3 bits| 3 bits| 6 bits     |
-
-
-
-#### Operation Mnemonics:
-| Mnemonic | Operation          | funct |
-|----------|--------------------|-------|
-| ADD      | rd ← rs + rt        | 000   |
-| SUB      | rd ← rs - rt        | 001   |
-| AND      | rd ← rs & rt        | 010   |
-| OR       | rd ← rs | rt        | 011   |
-| MULT     | rd ← rs * rt        | 100   |
-| XOR      | rd ← rs ^ rt        | 101   |
-| JR       | PC ← rs             | 111   |
-
----
-
-### Immediate Instructions
-
-
-
-
-
-### Jump Instructions
+### 3.Jump Instructions
 
 | Field   | opcode | address |
 |---------|--------|---------|
