@@ -1,0 +1,176 @@
+Flow report for MIPS
+Thu Apr 18 18:10:18 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Summary                                                                   ;
++-----------------------------------+--------------------------------------------+
+; Flow Status                       ; Successful - Thu Apr 18 18:10:18 2024      ;
+; Quartus II 64-Bit Version         ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                     ; MIPS                                       ;
+; Top-level Entity Name             ; DP                                         ;
+; Family                            ; Arria II GX                                ;
+; Logic utilization                 ; < 1 %                                      ;
+;     Combinational ALUTs           ; 248 / 36,100 ( < 1 % )                     ;
+;     Memory ALUTs                  ; 0 / 18,050 ( 0 % )                         ;
+;     Dedicated logic registers     ; 84 / 36,100 ( < 1 % )                      ;
+; Total registers                   ; 84                                         ;
+; Total pins                        ; 76 / 176 ( 43 % )                          ;
+; Total virtual pins                ; 0                                          ;
+; Total block memory bits           ; 6,144 / 2,939,904 ( < 1 % )                ;
+; DSP block 18-bit elements         ; 0 / 232 ( 0 % )                            ;
+; Total GXB Receiver Channel PCS    ; 0 / 4 ( 0 % )                              ;
+; Total GXB Receiver Channel PMA    ; 0 / 4 ( 0 % )                              ;
+; Total GXB Transmitter Channel PCS ; 0 / 4 ( 0 % )                              ;
+; Total GXB Transmitter Channel PMA ; 0 / 4 ( 0 % )                              ;
+; Total PLLs                        ; 0 / 4 ( 0 % )                              ;
+; Total DLLs                        ; 0 / 2 ( 0 % )                              ;
+; Device                            ; EP2AGX45CU17I3                             ;
+; Timing Models                     ; Final                                      ;
++-----------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/18/2024 18:08:57 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; MIPS                ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                             ;
++-------------------------------------+-------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                                   ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+-------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 106528805602140.171345113721540                                         ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                      ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/SUT/Jozavat/Computer_Architecture/HWS/HW6/Mips/Mips/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                             ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                               ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                                                 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                                                              ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                                                 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                                                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                                                 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                                                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                                                 ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; blocks/lpm_mux0.bsf                                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; blocks/lpm_mux0.cmp                                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; RegisterFile/lpm_decode0.bsf                                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; RegisterFile/lpm_decode0.cmp                                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_mux1.bsf                                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_mux1.cmp                                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_constant0.bsf                                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_constant0.cmp                                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_counter0.bsf                                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_counter0.cmp                                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_mux2.bsf                                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ALU/lpm_mux2.cmp                                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; blocks/lpm_constant2.bsf                                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; blocks/lpm_constant2.cmp                                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter2.bsf                                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter2.cmp                                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; blocks/lpm_mux00.bsf                                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; blocks/lpm_mux00.cmp                                                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                                ; --            ; DP          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                   ; --            ; DP          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                  ; --            ; DP          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                            ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; DP                                                                      ; MIPS          ; --          ; --             ;
++-------------------------------------+-------------------------------------------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4761 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:17     ; 1.4                     ; 5658 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4698 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 2.0                     ; 4807 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4617 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4628 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4628 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:32     ; --                      ; --                  ; 00:00:15                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-PRAUBDAM  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
+quartus_fit --read_settings_files=off --write_settings_files=off MIPS -c MIPS
+quartus_asm --read_settings_files=off --write_settings_files=off MIPS -c MIPS
+quartus_sta MIPS -c MIPS
+quartus_eda --read_settings_files=off --write_settings_files=off MIPS -c MIPS
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIPS -c MIPS --vector_source=D:/SUT/Jozavat/Computer_Architecture/HWS/HW6/Mips/Mips/factorialtest.vwf --testbench_file=D:/SUT/Jozavat/Computer_Architecture/HWS/HW6/Mips/Mips/simulation/qsim/factorialtest.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/SUT/Jozavat/Computer_Architecture/HWS/HW6/Mips/Mips/simulation/qsim/ MIPS -c MIPS
+
+
+
